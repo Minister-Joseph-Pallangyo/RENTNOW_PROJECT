@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENTNOW - Find Your Perfect Apartment</title>
+    <link rel="stylesheet" href="homepage style.css">
+</head>
+<body>
+    <header>
+        <h1>RENTNOW</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Find Your Perfect Apartment</h2>
+        <form action="search.php" method="GET">
+            <input type="text" name="location" placeholder="Enter location..." required>
+            <input type="number" name="price_min" placeholder="Min price">
+            <input type="number" name="price_max" placeholder="Max price">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="featured">
+        <h2>Featured Apartments</h2>
+        <div class="apartment-list">
+            <div class="apartment">
+                <img src="assets/images/apartment1.jpg" alt="Apartment 1">
+                <h3>Modern Apartment in Downtown</h3>
+                <p>$1200/month</p>
+            </div>
+            <div class="apartment">
+                <img src="assets/images/apartment2.jpg" alt="Apartment 2">
+                <h3>Cozy Studio Near University</h3>
+                <p>$800/month</p>
+            </div>
+            <!-- Add more apartments as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RENTNOW. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
